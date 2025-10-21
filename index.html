@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Friend's Shop — Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">FriendShop</a>a
+
+      <nav class="main-nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="cart-btn" aria-label="Open cart">Cart (<span id="cart-count">0</span>)</button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Quality goods. Local prices.</h1>
+          <p>Handpicked items for your day-to-day life. Fast delivery in the city.</p>
+          <a class="btn" href="products.html">Browse Products</a>
+        </div>
+        <div class="hero-image">
+          <img src="images/hero.jpg" alt="Shop hero" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES / Categories -->
+    <section class="features container">
+      <div class="feature">
+        <h3>Fast Delivery</h3>
+        <p>Same-day delivery inside the city.</p>
+      </div>
+      <div class="feature">
+        <h3>Secure Payments</h3>
+        <p>Cash on delivery or online payments.</p>
+      </div>
+      <div class="feature">
+        <h3>Local Support</h3>
+        <p>Call or WhatsApp for quick help.</p>
+      </div>
+    </section>
+
+    <!-- PRODUCTS PREVIEW -->
+    <section class="container products-preview">
+      <h2>Popular Products</h2>
+      <div class="grid" id="product-grid">
+        <!-- JS will inject product cards here, or you can hardcode -->
+      </div>
+      <div class="center">
+        <a class="btn-outline" href="products.html">View All Products</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> FriendShop — Built by Kamal</p>
+    </div>
+  </footer>
+
+  <div id="cart-modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" id="close-cart">×</button>
+      <h3>Your cart</h3>
+      <div id="cart-items">No items yet.</div>
+      <div class="modal-actions">
+        <button id="checkout" class="btn">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

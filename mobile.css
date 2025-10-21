@@ -1,0 +1,72 @@
+/* ============================
+   MOBILE CSS OVERRIDES
+   Target screens <= 768px
+   ============================ */
+@media (max-width: 768px) {
+
+  /* NAVIGATION */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+  nav .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  nav .menu a {
+    margin: 8px 0;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    padding: 60px 15px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* CONTACT FORM */
+  .contact-form {
+    padding: 20px 15px;
+  }
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.95rem;
+    padding: 8px 10px;
+  }
+  .btn {
+    padding: 8px 14px;
+    font-size: 0.95rem;
+  }
+
+  /* PRODUCT GRID */
+  .product-grid {
+    grid-template-columns: 1fr; /* single column */
+    gap: 15px;
+  }
+  .product-card img {
+    height: 180px;
+  }
+  .product-card h3 {
+    font-size: 1rem;
+  }
+  .product-card .desc {
+    font-size: 0.9rem;
+  }
+  .product-card .price {
+    font-size: 0.95rem;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 0.9rem;
+    padding: 20px 15px;
+  }
+
+}

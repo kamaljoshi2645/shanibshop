@@ -1,0 +1,105 @@
+.product-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 18px;
+  margin-top: 30px;
+}
+.product-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(20, 20, 40, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(20, 20, 40, 0.1);
+}
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.product-card h3 {
+  margin: 12px 0 6px;
+  font-size: 1.1rem;
+}
+.product-card .desc {
+  color: #666666;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+.product-card .price {
+  color: #0b76ef;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+nav {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav a {
+  color: #0b76ef;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #095fc2;
+}
+
+/* ---------------------------
+   HERO / MAIN BANNER (homepage)
+   --------------------------- */
+
+
+
+/* ---------------------------
+   PRODUCT PAGE
+   --------------------------- */
+
+/* ---------------------------
+   FOOTER (optional)
+   --------------------------- */
+footer {
+  padding: 30px 20px;
+  background-color: #111111;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* ---------------------------
+   RESPONSIVE
+   --------------------------- */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 20px 15px;
+  }
+  .product-card img {
+    height: 180px;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
