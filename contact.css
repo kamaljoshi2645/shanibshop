@@ -1,45 +1,8 @@
-.contact {
-  padding: 60px 0;
-  background-color: #f9f9f9;
+* {
+  margin: 0;
+  padding: 0;
 }
-.contact-subtitle {
-  color: #666666;
-  text-align: center;
-  margin-bottom: 40px;
-}
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 30px 25px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(20, 20, 40, 0.04);
-}
-.form-group {
-  margin-bottom: 20px;
-}
-label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-input,
-textarea {
-  width: 100%;
-  padding: 10px 12px;
-  border-radius: 12px;
-  border: 1px solid #e9e9ee;
-  font-size: 1rem;
-  transition: border 0.2s ease;
-}
-input:focus,
-textarea:focus {
-  border-color: #0b76ef;
-  outline: none;
-}
-textarea {
-  resize: vertical;
-}
+
 nav {
   width: 100%;
   padding: 15px 20px;
@@ -47,19 +10,115 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 100;
 }
+
 nav a {
   color: #0b76ef;
   text-decoration: none;
   margin-left: 15px;
   font-weight: 500;
 }
+
 nav a:hover {
   color: #095fc2;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+
+.login {
+  border: 1px solid black;
+  width: 80vw;
+  height: 80vh;
+  background: url(https://static.vecteezy.com/system/resources/thumbnails/020/804/109/small/communication-and-technology-concept-hand-putting-wooden-block-cube-symbol-telephone-email-address-website-page-contact-us-or-e-mail-marketing-contact-us-in-customer-support-concept-photo.jpg);
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 75);
+  background-position: center;
+  background-size: contain;
+  overflow: hidden;
+
+}
+
+form {
+  display: block;
+  box-sizing: border-box;
+  padding: 75px 0px 0px 25%;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: brightness(50%);
+  flex-direction: column;
+  display: flex;
+  gap: 15px;
+
+
+}
+
+h1 {
+  font-weight: normal;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 5);
+  margin-bottom: 50px;
+
+}
+
+label {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding-left: 15px;
+  flex-direction: column;
+  display: flex;
+
+}
+
+input {
+  background: rgba(255, 255, 255, 0.3);
+  height: 40px;
+  width: 38vw;
+  line-height: 40px;
+  border-radius: 20px;
+  padding: 0px 20px;
+  border: none;
+  margin-bottom: 20px;
+  color: white;
+
+}
+
+textarea {
+  background: rgba(255, 255, 255, 0.3);
+  height: 20vh;
+    width: 38vw;
+  line-height: 40px;
+  border-radius: 20px;
+  padding: 0px 2%;
+  border: none;
+  margin-bottom: 20px;
+  color: white;
+}
+
+button {
+  background: rgb(45, 126, 231);
+  height: 40px;
+  width: 41vw;
+  line-height: 40px;
+  border-radius: 40px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 /* ---------------------------
