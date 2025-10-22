@@ -1,33 +1,31 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>STAR GAARMENT'S </title>
+  <title>Friend's Shop — Home</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="style.css">
-  <!-- <link rel="stylesheet" href="mobile.css"> -->
-
+  <link rel="stylesheet" href="mobile.css">
+  
 </head>
-
 <body>
-  <header>
-    <a class="brand" href="index.html">STAR GAARMENT'S</a>
-    <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="product.html">Products</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="sign_in.html">Sign IN</a></li>
-          <li><a href="log_in.html">Log IN </a></li>
-        </ul>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">FriendShop</a>
+
+      <nav class="main-nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html">Contact</a>
+        
       </nav>
 
       <div class="header-actions">
         <button id="cart-btn" aria-label="Open cart">Cart (<span id="cart-count">0</span>)</button>
         <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
       </div>
+    </div>
   </header>
 
   <main>
@@ -37,7 +35,7 @@
         <div class="hero-content">
           <h1>Quality goods. Local prices.</h1>
           <p>Handpicked items for your day-to-day life. Fast delivery in the city.</p>
-          <a class="btn" href="products.html">Browse Products</a>
+          <a class="btn" href="Browse Products.html">Browse Products</a>
         </div>
         <div class="hero-image">
           <img src="images/hero.jpg" alt="Shop hero" />
@@ -68,29 +66,24 @@
         <!-- JS will inject product cards here, or you can hardcode -->
       </div>
       <div class="center">
-        <a class="btn-outline" href="products.html">View All Products</a>
+        <a class="btn-outline" href="view all product.html">View All Products</a>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> STAR GARMENT'S - Made by Kamal&Shanib</p>
-    </div>
-  </footer>
-
-  <div id="cart-modal" class="modal hidden" aria-hidden="true">
+<div id="cart-modal" class="modal hidden" aria-hidden="true">
     <div class="modal-panel">
       <button class="modal-close" id="close-cart">×</button>
       <h3>Your cart</h3>
       <div id="cart-items">No items yet.</div>
       <div class="modal-actions">
         <button id="checkout" class="btn">Checkout</button>
+        <footer class="site-footer">
+    <div class="container">
+    </div>
+  </footer>
       </div>
     </div>
   </div>
-
-  <script src="js/script.js"></script>
+   <script src="js/script.js"></script>
 </body>
-
 </html>
