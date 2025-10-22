@@ -18,6 +18,56 @@ body {
   line-height: 1.6;
 }
 
+/* changes done by shanib */
+.brand{
+  display: flex;
+  justify-content: start ;
+  color:#0ef;
+  text-decoration: none;
+  font-size:2em ;
+  font-weight: 900;
+  padding: 0px 100px 0px 0px ;
+  
+}
+header{
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+nav a {
+  margin-left: 15px;
+}
+ul{
+  list-style: none;
+  
+}
+nav ul li{
+  display: inline-block;
+  border-bottom: 2px solid #0ef;
+  border-left: 2px solid #0ef;
+  border-radius: 15px;
+  z-index: -1;
+
+
+}
+nav ul li a{
+  text-decoration: none;
+  position: relative;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #333;
+  padding: 6px 30px;
+  transition: .5s;
+}
+nav ul li a:hover{
+  color: #0ef;
+}
+main{
+  min-height: calc(100vh);
+
+}
 /* ---------------------------
    CONTAINER
    --------------------------- */
@@ -45,67 +95,35 @@ p {
 .btn {
   display: inline-block;
   padding: 10px 16px;
-  border: none;
-  border-radius: 12px;
-  background-color: #0b76ef;
-  color: #ffffff;
-  font-weight: 600;
+  border-radius: 25px;
+  background-color: #000;
+  color: #0ef;
+   border-bottom: 2px solid #0ef;
+  border-left: 2px solid #0ef;
+  font-weight: 500;
+  text-decoration: none;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: 0.5s ease;
 }
 .btn:hover {
-  background-color: #095fc2;
+  background-color: #0ef;
+  color: #000;
 }
-
-/* ---------------------------
-   HEADER / NAV (optional basic)
-   --------------------------- */
-nav {
-  width: 100%;
-  padding: 15px 20px;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-nav a {
-  color: #0b76ef;
-  text-decoration: none;
-  margin-left: 15px;
-  font-weight: 500;
-}
-nav a:hover {
-  color: #095fc2;
-}
-
-/* ---------------------------
-   HERO / MAIN BANNER (homepage)
-   --------------------------- */
-
-
-
-/* ---------------------------
-   PRODUCT PAGE
-   --------------------------- */
 
 /* ---------------------------
    FOOTER (optional)
    --------------------------- */
-footer {
+footer{
   padding: 30px 20px;
-  background-color: #111111;
-  color: #ffffff;
+  background: #000;
+  color: #0ef;
   text-align: center;
 }
 
 /* ---------------------------
    RESPONSIVE
    --------------------------- */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
   }
@@ -121,4 +139,4 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
-}
+} */
