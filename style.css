@@ -6,6 +6,8 @@
    GLOBAL RESET / BASE
    --------------------------- */
 * {
+    font-family: "Playfair Display", serif;
+
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -16,54 +18,96 @@ body {
   background-color: #fafafa;
   color: #333333;
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 /* changes done by shanib */
-.brand{
-  display: flex;
-  justify-content: start ;
-  color:#0ef;
-  text-decoration: none;
-  font-size:2em ;
-  font-weight: 900;
-  padding: 0px 100px 0px 0px ;
-  
+
+/* from here the all of css for header  */
+nav{
+  text-transform: uppercase;
+  background-color: rgba(75, 119, 150, 0.878);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+
 }
-header{
-  background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
-}
-nav a {
-  margin-left: 15px;
-}
-ul{
+nav ul{
+  width: 100%;
   list-style: none;
-  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
 }
 nav ul li{
-  display: inline-block;
-  border-bottom: 2px solid #0ef;
-  border-left: 2px solid #0ef;
-  border-radius: 15px;
-  z-index: -1;
-
+  height: 50px;
 
 }
-nav ul li a{
+nav ul li a {
+  height: 100%;
+  padding: 0px 30px;
   text-decoration: none;
-  position: relative;
-  font-size: 1.1em;
-  font-weight: 500;
-  color: #333;
-  padding: 6px 30px;
-  transition: .5s;
+  display: flex;
+  align-items: center;
+  color: black;
+
 }
 nav ul li a:hover{
-  color: #0ef;
+  background-color: #f0f0f0;
+
 }
+nav ul li:first-child{
+  margin-right: auto;
+
+}
+.sidebar{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+
+  background-color: rgba(255, 255, 255, 0.2);
+
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+
+}
+.slidebar nav ul li {
+  width: 100%;
+
+}
+.slidebar nav ul li a{
+  width: 100%;
+
+}
+@media screen and (max-width: 800px) {
+  .hideOnMobile{
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  .hideOnLaptop{
+    display: none;
+  }
+  
+}
+@media screen and (max-width: 400px) {
+  .sidebar{
+    width: 100%;
+
+  }
+}
+
+/* from here tak ye sab css heder ke liye hai tak hai  */
+
+
+
 main{
   min-height: calc(100vh);
 
@@ -96,18 +140,18 @@ p {
   display: inline-block;
   padding: 10px 16px;
   border-radius: 25px;
-  background-color: #000;
-  color: #0ef;
-   border-bottom: 2px solid #0ef;
-  border-left: 2px solid #0ef;
+  background-color: white;
+  color: black;
+   border-bottom: 2px solid black;
+  border-left: 2px solid black;
   font-weight: 500;
   text-decoration: none;
   cursor: pointer;
   transition: 0.5s ease;
 }
 .btn:hover {
-  background-color: #0ef;
-  color: #000;
+  background-color: black;
+  color: white;
 }
 
 /* ---------------------------
@@ -115,8 +159,8 @@ p {
    --------------------------- */
 footer{
   padding: 30px 20px;
-  background: #000;
-  color: #0ef;
+  background: black;
+  color: white;
   text-align: center;
 }
 

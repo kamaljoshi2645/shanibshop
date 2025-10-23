@@ -1,13 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* changes done by shanib */
+
+/* from here the all of css for header  */
+nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+nav ul li {
+  height: 50px;
+
+}
+
+nav ul li a {
+  height: 100%;
+  padding: 0px 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+
+}
+
+nav ul li a:hover {
+  background-color: #f0f0f0;
+
+}
+
+nav ul li:first-child {
+  margin-right: auto;
+
+}
+
+.sidebar {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+
+  background-color: rgba(255, 255, 255, 0.2);
+
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+
+}
+
+.slidebar nav ul li {
+  width: 100%;
+
+}
+
+.slidebar nav ul li a {
+  width: 100%;
+
+}
+
+@media screen and (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hideOnLaptop {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+
+  }
+}
+
+/* from here tak ye sab css heder ke liye hai tak hai  */
+
+
+
 .product-section {
   padding: 60px 0;
   background-color: #ffffff;
 }
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 18px;
   margin-top: 30px;
 }
+
 .product-card {
   background-color: #ffffff;
   border-radius: 12px;
@@ -16,52 +121,38 @@
   box-shadow: 0 4px 12px rgba(20, 20, 40, 0.04);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 18px rgba(20, 20, 40, 0.1);
 }
+
 .product-card img {
   width: 100%;
   height: 220px;
   object-fit: cover;
   border-radius: 10px;
 }
+
 .product-card h3 {
   margin: 12px 0 6px;
   font-size: 1.1rem;
 }
+
 .product-card .desc {
   color: #666666;
   font-size: 0.95rem;
   margin-bottom: 8px;
 }
+
 .product-card .price {
   color: #0b76ef;
   font-weight: 700;
   font-size: 1rem;
   margin-bottom: 12px;
 }
-nav {
-  width: 100%;
-  padding: 15px 20px;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-nav a {
-  color: #0b76ef;
-  text-decoration: none;
-  margin-left: 15px;
-  font-weight: 500;
-}
-nav a:hover {
-  color: #095fc2;
-}
+
+
 
 /* ---------------------------
    HERO / MAIN BANNER (homepage)
@@ -78,7 +169,7 @@ nav a:hover {
    --------------------------- */
 footer {
   padding: 30px 20px;
- 
+
   color: #ffffff;
   text-align: center;
 }
